@@ -405,7 +405,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       color: color.withOpacity(0.06),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: color.withOpacity(0.15)),
+        side: BorderSide(color: color.withOpacity(0.15)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),

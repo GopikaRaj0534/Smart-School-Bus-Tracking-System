@@ -21,7 +21,7 @@ class _BusCrudScreenState extends State<BusCrudScreen> {
 
   @override
   void initState() {
-    super.override("initState");
+    super.initState();
     // Fetch initial bus data
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Provider.of<BusProvider>(context, listen: false).fetchBuses();
