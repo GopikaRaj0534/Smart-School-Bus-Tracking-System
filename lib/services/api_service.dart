@@ -1,6 +1,15 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+/// API Service for RouteSafe containing HTTP connections to the Flask MySQL backend.
+/// Maps local requests to RESTful endpoints:
+/// - POST   /api/login
+/// - POST   /api/register
+/// - POST   /api/forgot-password
+/// - GET    /api/buses
+/// - POST   /api/buses
+/// - PUT    /api/buses/{id}
+/// - DELETE /api/buses/{id}
 class ApiService {
   // Configured for local Flask dev environment
   static const String baseUrl = 'http://10.0.2.2:5000/api'; // Android Emulator alias for localhost
