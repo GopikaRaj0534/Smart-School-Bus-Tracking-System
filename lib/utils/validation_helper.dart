@@ -1,5 +1,7 @@
 import 'dart:math';
 
+/// Reusable validation logic class for the RouteSafe tracking application.
+/// Handles forms, text input formats, captcha checks, and passwords.
 class ValidationHelper {
   // Check for empty string
   static String? validateRequired(String? value, String fieldName) {
